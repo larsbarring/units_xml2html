@@ -1,0 +1,333 @@
+<html xmlns:u2="https://doi.org/10.5065/D6KD1WN0" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>UDUNITS2: SI Derived Units</title>
+<style>
+                    body {
+                        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+                        line-height: 1.6;
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        padding: 20px;
+                        background-color: #f5f5f5;
+                    }
+                    .header {
+                        background-color: #fff;
+                        padding: 20px;
+                        border-radius: 8px;
+                        margin-bottom: 20px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    }
+                    .unit-card {
+                        background-color: white;
+                        border-radius: 8px;
+                        padding: 20px;
+                        margin-bottom: 20px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    }
+                    .unit-header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 15px;
+                        border-bottom: 2px solid #4a90e2;
+                        padding-bottom: 10px;
+                    }
+                    .unit-info {
+                        display: flex;
+                        align-items: center;
+                        flex: 1;
+                    }
+                    .unit-name {
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        margin-right: 15px;
+                    }
+                    .unit-plural {
+                        font-size: 1.1em;
+                        margin-right: 15px;
+                    }
+                    .unit-symbol {
+                        font-size: 1.2em;
+                        color: #4a90e2;
+                        font-weight: bold;
+                        padding: 3px 8px;
+                        border: 2px solid #4a90e2;
+                        border-radius: 4px;
+                    }
+                    .unit-aliases {
+                        color: #666;
+                        font-style: italic;
+                        margin-left: 15px;
+                    }
+                    .unit-derived { 
+                        font-style: italic; 
+                        margin-left: 15px;
+                    }
+                    .unit-comment {
+                        color: #718096;
+                        font-size: 0.9em;
+                        font-style: normal;
+                        margin-left: 15px;
+                        text-align: right;
+                        flex-shrink: 0;
+                    }
+                    .unit-definition {
+                        color: #333;
+                        font-size: 1.1em;
+                        line-height: 1.6;
+                    }
+                    .copyright {
+                        margin-top: 20px;
+                        font-size: 0.9em;
+                        color: #666;
+                        text-align: center;
+                        padding: 20px;
+                        background-color: white;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    }
+                </style>
+</head>
+<body>
+<div class="header"><h1>SI Derived Units Reference</h1></div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">radian</span><span class="unit-symbol">rad</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Standard unit of angular measure, an angle that creates an arc in a circle equal in length to that circle's radius (roughly 57.3 degrees); as a ratio of two lengths, it has no dimension</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">steradian</span><span class="unit-symbol">sr</span><span class="unit-derived">
+                            Derived from: rad^2</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Standard unit of solid angle measure, it is the solid angle which cuts out an area on a sphere that is the square of the sphere's radius; as a ratio of two areas, it has no dimension</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">hertz</span><span class="unit-symbol">Hz</span><span class="unit-derived">
+                            Derived from: 1/s</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Unit of frequency meaning one cycle per second</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">gram</span><span class="unit-symbol">g</span><span class="unit-derived">
+                            Derived from: 1e-3 kg</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Unit of mass equal to one thousandth of a kilogram</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">newton</span><span class="unit-symbol">N</span><span class="unit-derived">
+                            Derived from: m.kg/s^2</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Unit of force; the amount needed to accelerate 1 kilogram of mass at the rate of 1 metre per second squared</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">pascal</span><span class="unit-symbol">Pa</span><span class="unit-derived">
+                            Derived from: N/m^2</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Unit of pressure (force per unit area) equal to one newton per square meter</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">joule</span><span class="unit-symbol">J</span><span class="unit-derived">
+                            Derived from: N.m</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Standard unit of work or energy, equal to the work done by a force of one newton acting along a distance of one meter</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">watt</span><span class="unit-symbol">W</span><span class="unit-derived">
+                            Derived from: J/s</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Standard unit of power, equivalent to one joule per second, and equal to one ampere flowing across a potential difference of one volt</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">coulomb</span><span class="unit-symbol">C</span><span class="unit-derived">
+                            Derived from: s.A</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Standard unit of electric charge, the quantity of electricity transported in one second by a current of one ampere</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">volt</span><span class="unit-symbol">V</span><span class="unit-derived">
+                            Derived from: W/A</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Standard unit of electric potential difference (and electromotive force); the difference of potential between two points of a conductor carrying a constant current of one ampere and dissipating one watt of power</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">farad</span><span class="unit-symbol">F</span><span class="unit-derived">
+                            Derived from: C/V</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Standard unit of capacitance; the amount which, when a capacitor is charged to a potential difference of one volt, carries a charge of one coulomb</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">ohm</span><span class="unit-symbol">Ω</span><span class="unit-derived">
+                            Derived from: V/A</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Standard unit of electrical resistance; the resistance between two points of a conductor when a constant potential difference of 1.0 volt, applied to these points, produces in the conductor a current of 1.0 ampere</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">siemens</span><span class="unit-symbol">S</span><span class="unit-derived">
+                            Derived from: A/V</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Unit of electric conductance; the reciprocal of one ohm</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">weber</span><span class="unit-symbol">Wb</span><span class="unit-derived">
+                            Derived from: V.s</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Unit of magnetic flux (product of the average magnetic field times the perpendicular area that it penetrates), expressed as volt-seconds</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">tesla</span><span class="unit-symbol">T</span><span class="unit-derived">
+                            Derived from: Wb/m^2</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Unit of flux density, equal to one weber per square meter</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">henry</span><span class="unit-symbol">H</span><span class="unit-derived">
+                            Derived from: Wb/A</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Unit of inductance; where a circuit's current changes at a constant rate of 1 ampere per second, results in a generation of 1 V of potential difference</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">degree_Celsius</span><span class="unit-plural">
+                            (plural: 
+                            degrees_Celsius
+                            )
+                        </span><span class="unit-symbol">°C</span><span class="unit-derived">
+                            Derived from: K @ 273.15</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Unit (and scale) of temperature, with same magnitude as the kelvin and a zero-point offset of 273.15</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">lumen</span><span class="unit-symbol">lm</span><span class="unit-derived">
+                            Derived from: cd.sr</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Unit of luminous flux, a measure of the total "amount" of visible light emitted by a source; one candela-steradian</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">lux</span><span class="unit-symbol">lx</span><span class="unit-derived">
+                            Derived from: lm/m^2</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Unit of illuminance and luminous emittance, measuring luminous flux per unit area, and used as a measure of intensity of light; equal to one lumen per square meter</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">katal</span><span class="unit-symbol">kat</span><span class="unit-derived">
+                            Derived from: mol/s</span>
+</div>
+<span class="unit-comment">SI derived unit</span>
+</div>
+<div class="unit-definition">Unit of catalytic activity (property of a catalyst, such as an enzyme); expresses the ability to break 1 mole of bonds per second under specified conditions</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">becquerel</span><span class="unit-symbol">Bq</span><span class="unit-derived">
+                            Derived from: 1/s</span>
+</div>
+<span class="unit-comment">SI derived unit with special names/symbols admitted for reasons of safeguarding human health</span>
+</div>
+<div class="unit-definition">Unit of radioactivity; the activity of a quantity of material in which one nucleus decays per second (hence, equivalent to one unit per second)</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">gray</span><span class="unit-symbol">Gy</span><span class="unit-derived">
+                            Derived from: J/kg</span>
+</div>
+<span class="unit-comment">SI derived unit with special names/symbols admitted for reasons of safeguarding human health</span>
+</div>
+<div class="unit-definition">Unit of ionizing radiation, a measure of the absorbed dose of radiation; absorption of one joule of radiation energy by one kilogram of matter</div>
+</div>
+<div class="unit-card">
+<div class="unit-header">
+<div class="unit-info">
+<span class="unit-name">sievert</span><span class="unit-symbol">Sv</span><span class="unit-derived">
+                            Derived from: J/kg</span>
+</div>
+<span class="unit-comment">SI derived unit with special names/symbols admitted for reasons of safeguarding human health</span>
+</div>
+<div class="unit-definition">Unit of ionizing radiation dose, measuring the health effect of low levels of ionizing radiation on the human body</div>
+</div>
+<div class="copyright"><p>
+                        Copyright 2020 University Corporation for Atmospheric Research<br>
+                        This data is derived from the UDUNITS-2 package.
+                    </p></div>
+</body>
+</html>
