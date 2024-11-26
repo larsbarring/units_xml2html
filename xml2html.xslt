@@ -127,8 +127,8 @@
 
                 <div class="copyright">
                     <p>
-                        Copyright 2020 University Corporation for Atmospheric Research<br/>
-                        This data is derived from the UDUNITS-2 package.
+                        Web pages derived from the XML database of units in the UDUNITS-2 package.<br/>
+                        The UDUNITS-2 package is copyrighted by the University Corporation for Atmospheric Research, 2020.
                     </p>
                 </div>
             </body>
