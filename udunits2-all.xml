@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!--
+Copyright 2008, 2009 University Corporation for Atmospheric Research
+
+This file is part of the UDUNITS-2 package.  See the file COPYRIGHT
+in the top-level source-directory of the package for copying and
+redistribution conditions.
+
+SI base units.
+-->
+<unit-system>
+    <unit>
+        <base/>
+        <name><singular>meter</singular></name>
+        <symbol>m</symbol>
+        <aliases> <name><singular>metre</singular></name> </aliases>
+        <definition>The meter is the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second.</definition>
+    </unit>
+    <unit>
+        <base/>
+        <name><singular>kilogram</singular></name>
+        <symbol>kg</symbol>
+        <definition> The kilogram is the unit of mass; it is equal to the mass of the international prototype of the kilogram.</definition>
+    </unit>
+    <unit>
+        <base/>
+        <name><singular>second</singular></name>
+        <symbol>s</symbol>
+        <definition>The second is the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the cesium 133 atom.</definition>
+    </unit>
+    <unit>
+        <base/>
+        <name><singular>ampere</singular></name>
+        <symbol>A</symbol>
+        <definition>The ampere is that constant current which, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed 1 meter apart in vacuum, would produce between these conductors a force equal to 2e-7 newton per meter of length.</definition>
+    </unit>
+    <unit>
+        <base/>
+        <name><singular>kelvin</singular></name>
+        <symbol>K</symbol>
+        <definition>The kelvin, unit of thermodynamic temperature, is the fraction 1/273.16 of the thermodynamic temperature of the triple point of water.</definition>
+    </unit>
+    <unit>
+        <base/>
+        <name><singular>mole</singular></name>
+        <symbol>mol</symbol>
+        <definition>The mole is the amount of substance of a system which contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12. When the mole is used, the elementary entities must be specified and may be atoms, molecules, ions, electrons, other particles, or specified groups of such particles.</definition>
+    </unit>
+    <unit>
+        <base/>
+        <name><singular>candela</singular></name>
+        <symbol>cd</symbol>
+        <definition>The candela is the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540e12 hertz and that has a radiant intensity in that direction of 1/683 watt per steradian.</definition>
+    </unit>
+<!--
+</unit-system>
+<?xml version="1.0" encoding="US-ASCII"?>
+Copyright 2008, 2009 University Corporation for Atmospheric Research
+
+This file is part of the UDUNITS-2 package.  See the file COPYRIGHT
+in the top-level source-directory of the package for copying and
+redistribution conditions.
+
+SI derived units with special names and symbols
+<unit-system>
+-->
+    <unit>
+        <comment>SI derived unit</comment>
+        <dimensionless/>
+        <name><singular>radian</singular></name>
+        <symbol>rad</symbol>
+        <definition>standard unit of angular measure, an angle that creates an arc in a circle equal in length to that circle's radius (roughly 57.3 degrees); as a ratio of two lengths, it has no dimension</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>rad^2</def>
+        <name><singular>steradian</singular></name>
+        <symbol>sr</symbol>
+        <definition>standard unit of solid angle measure, it is the solid angle which cuts out an area on a sphere that is the square of the sphere's radius; as a ratio of two areas, it has no dimension</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>1/s</def>
+        <name><singular>hertz</singular></name>
+        <symbol>Hz</symbol>
+        <definition>unit of frequency meaning one cycle per second</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>1e-3 kg</def>
+        <name><singular>gram</singular></name>
+        <symbol>g</symbol>
+        <definition>unit of mass equal to one thousandth of a kilogram</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>m.kg/s^2</def>
+        <name><singular>newton</singular></name>
+        <symbol>N</symbol>
+        <definition>unit of force; the amount needed to accelerate 1 kilogram of mass at the rate of 1 metre per second squared</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>N/m^2</def>
+        <name><singular>pascal</singular></name>
+        <symbol>Pa</symbol>
+        <definition>unit of pressure (force per unit area) equal to one newton per square meter</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>N.m</def>
+        <name><singular>joule</singular></name>
+        <symbol>J</symbol>
+        <definition>standard unit of work or energy, equal to the work done by a force of one newton acting along a distance of one meter</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>J/s</def>
+        <name><singular>watt</singular></name>
+        <symbol>W</symbol>
+        <definition>standard unit of power, equivalent to one joule per second, and equal to one ampere flowing across a potential difference of one volt</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>s.A</def>
+        <name><singular>coulomb</singular></name>
+        <symbol>C</symbol>
+        <definition>standard unit of electric charge, the quantity of electricity transported in one second by a current of one ampere</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>W/A</def>
+        <name><singular>volt</singular></name>
+        <symbol>V</symbol>
+        <definition>standard unit of electric potential difference (and electromotive force); the difference of potential between two points of a conductor carrying a constant current of one ampere and dissipating one watt of power</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>C/V</def>
+        <name><singular>farad</singular></name>
+        <symbol>F</symbol>
+        <definition>standard unit of capacitance; the amount which, when a capacitor is charged to a potential difference of one volt, carries a charge of one coulomb</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>V/A</def>
+        <name><singular>ohm</singular></name>
+        <symbol comment="Greek capital letter omega (preferred)">&#x3A9;</symbol>
+        <aliases>
+            <symbol comment="OHM SIGN">&#x2126;</symbol>
+        </aliases>
+        <definition>standard unit of electrical resistance; the resistance between two points of a conductor when a constant potential difference of 1.0 volt, applied to these points, produces in the conductor a current of 1.0 ampere</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>A/V</def>
+        <name> <singular>siemens</singular> </name>
+        <symbol>S</symbol>
+        <definition>unit of electric conductance; the reciprocal of one ohm</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>V.s</def>
+        <name><singular>weber</singular></name>
+        <symbol>Wb</symbol>
+        <definition>unit of magnetic flux (product of the average magnetic field times the perpendicular area that it penetrates), expressed as volt-seconds</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>Wb/m^2</def>
+        <name><singular>tesla</singular></name>
+        <symbol>T</symbol>
+        <definition>unit of flux density, equal to one weber per square meter</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>Wb/A</def>
+        <name><singular>henry</singular></name>
+        <symbol>H</symbol>
+        <definition>unit of inductance; where a circuit's current changes at a constant rate of 1 ampere per second, results in a generation of 1 V of potential difference</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>K @ 273.15</def>
+        <name>
+            <singular>degree_Celsius</singular>
+            <plural>degrees_Celsius</plural>
+        </name>
+        <symbol comment="DEGREE SIGN">&#xB0;C</symbol>
+        <definition>unit (and scale) of temperature, with same magnitude as the kelvin and a zero-point offset of 273.15</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>cd.sr</def>
+        <name><singular>lumen</singular></name>
+        <symbol>lm</symbol>
+        <definition>unit of luminous flux, a measure of the total "amount" of visible light emitted by a source; one candela-steradian</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>lm/m^2</def>
+        <name><singular>lux</singular></name>
+        <symbol>lx</symbol>
+        <definition>unit of illuminance and luminous emittance, measuring luminous flux per unit area, and used as a measure of intensity of light; equal to one lumen per square meter</definition>
+    </unit>
+    <unit>
+        <comment>SI derived unit</comment>
+        <def>mol/s</def>
+        <name><singular>katal</singular></name>
+        <symbol>kat</symbol>
+        <definition>unit of catalytic activity (property of a catalyst, such as an enzyme); expresses the ability to break 1 mole of bonds per second under specified conditions</definition>
+    </unit>
+
+    <!-- SI derived units with special names and symbols admitted for
+    reasons of safeguarding human health -->
+	<unit>
+        <comment>SI derived unit with special names/symbols admitted for reasons of safeguarding human health</comment>
+		<def>1/s</def>
+		<aliases>
+			<name comment="Is an alias because '1/s' is already mapped to 'hertz' and 'Hz'"><singular>becquerel</singular></name>
+			<symbol comment="Is an alias because '1/s' is already mapped to 'hertz' and 'Hz'">Bq</symbol>
+		</aliases>
+		<definition>unit of radioactivity; the activity of a quantity of material in which one nucleus decays per second (hence, equivalent to one unit per second)</definition>
+	</unit>
+	<unit>
+        <comment>SI derived unit with special names/symbols admitted for reasons of safeguarding human health</comment>
+		<def>J/kg</def>
+		<name><singular>gray</singular></name>
+		<symbol>Gy</symbol>
+		<definition>unit of ionizing radiation, a measure of the absorbed dose of radiation; absorption of one joule of radiation energy by one kilogram of matter</definition>
+	</unit>
+	<unit>
+        <comment>SI derived unit with special names/symbols admitted for reasons of safeguarding human health</comment>
+		<def>J/kg</def>
+		<aliases>
+			<name><singular>sievert</singular></name>
+			<symbol>Sv</symbol>
+		</aliases>
+		<definition>unit of ionizing radiation dose, measuring the health effect of low levels of ionizing radiation on the human body</definition>
+	</unit>
+<!--
+</unit-system>
+<?xml version="1.0" encoding="US-ASCII"?>
+Copyright 2008, 2009 University Corporation for Atmospheric Research
+
+This file is part of the UDUNITS-2 package.  See the file COPYRIGHT
+in the top-level source-directory of the package for copying and
+redistribution conditions.
+
+Units accepted for use with the SI
+<unit-system>
+-->
+    <!-- Hour, degree, liter, and the like -->
+        <unit>
+            <def>60 s</def>
+            <name><singular>minute</singular></name>
+            <symbol>min</symbol>
+            <definition>period of time equal to 60 seconds</definition>
+        </unit>
+        <unit>
+            <def>60 min</def>
+            <name><singular>hour</singular></name>
+            <symbol>h</symbol>
+            <aliases> <symbol>hr</symbol> </aliases>
+            <definition>period of time equal to 60 minutes</definition>
+        </unit>
+        <unit>
+            <def>24 h</def>
+            <name><singular>day</singular></name>
+            <symbol>d</symbol>
+            <definition>period of time equal to 24 hours</definition>
+        </unit>
+        <unit>
+            <comment>This "unit" is useful in the definition of subsequent units.</comment>
+            <def>3.141592653589793238462643383279</def>
+            <aliases>
+                <name><singular>pi</singular><noplural/></name>
+                <symbol comment="GREEK SMALL LETTER PI">&#x3c0;</symbol>        
+            </aliases>
+            <definition>mathematical constant equal to the ratio of a circle's circumference to its diameter</definition>
+        </unit>
+        <unit>
+            <def>(pi/180) rad</def>
+            <name><singular>arc_degree</singular></name>
+            <symbol comment="DEGREE SIGN">&#xB0;</symbol>             
+            <aliases>
+                <name><singular>angular_degree</singular></name>
+                <name><singular>degree</singular></name>
+                <name><singular>arcdeg</singular></name>
+            </aliases>
+            <definition>measurement of a plane angle representing 1/360 of a full rotation</definition>
+        </unit>
+        <unit>
+            <def>&#xB0;/60</def>                <!-- DEGREE SIGN -->
+            <name><singular>arc_minute</singular></name>
+            <symbol>'</symbol>
+            <symbol comment="PRIME">&#x2032;</symbol>           
+            <aliases>
+                <name><singular>angular_minute</singular></name>
+                <name><singular>arcminute</singular></name>
+                <name><singular>arcmin</singular></name>
+            </aliases>
+            <definition>measurement of a plane angle equal to 1/60 arc degree</definition>
+        </unit>
+        <unit>
+            <def>'/60</def>
+            <name><singular>arc_second</singular></name>
+            <symbol>"</symbol>
+            <symbol comment="DOUBLE PRIME">&#x2033;</symbol>           
+            <aliases>
+                <name><singular>angular_second</singular></name>
+                <name><singular>arcsecond</singular></name>
+                <name><singular>arcsec</singular></name>
+            </aliases>
+            <definition>measurement of a plane angle equal to 1/60 arc minute</definition>
+        </unit>
+        <unit>
+            <comment>The definition is exact.  From 1901 to 1964, however, 1 liter was 1.000028 dm^3 (volume of 1 kg of water under standard conditions).</comment>
+            <def comment="exact">dm^3</def>
+            <name><singular>liter</singular></name>
+            <symbol comment="NIST recommendation">L</symbol>                  
+            <aliases>
+                <name><singular>litre</singular></name>
+                <symbol>l</symbol>
+            </aliases>
+            <definition>unit of capacity equal to 1000 cubic centimeters</definition>
+        </unit>
+        <unit>
+            <def>1000 kg</def>
+            <name><singular>metric_ton</singular></name>
+            <symbol>t</symbol>
+            <aliases> <name><singular>tonne</singular></name> </aliases>
+            <definition>unit of weight equal to 1000 kilograms</definition>
+        </unit>
+
+    <!-- Units whose values are obtained experimentally -->
+        <unit>
+            <comment>Unit's value is obtained experimentally</comment>
+            <def>1.60217733e-19 J</def>
+            <name><singular>electronvolt</singular></name>
+            <symbol>eV</symbol>
+            <aliases>
+                <name><singular>electron_volt</singular></name>
+            </aliases>
+            <definition>unit of energy equal to the work accelerating an electron through a potential difference of one volt</definition>
+        </unit>
+        <unit>
+            <comment>Unit's value is obtained experimentally</comment>
+            <def>1.6605402e-27 kg</def>
+            <name><singular>unified_atomic_mass_unit</singular></name>
+            <symbol>u</symbol>
+            <aliases>
+                <name> <singular>atomic_mass_unit</singular> </name>
+                <name> <singular>atomicmassunit</singular> </name>
+                <name> <singular>amu</singular><noplural/></name>
+            </aliases>
+            <definition>standard unit for indicating mass on an atomic or molecular scale; is approximately the mass of one nucleon (either a single proton or neutron), and equivalent to 1 g/mol</definition>
+        </unit>
+        <unit>
+            <comment>According to resolution by the International Astronomical Union (IAU) in 2012 </comment>
+            <def>1.49597870700e11 m</def>
+            <aliases>
+                <name><singular>astronomical_unit</singular></name>
+                <symbol>au</symbol> <!-- Adopted by BIPM in 2014 -->
+            </aliases>
+            <definition>Exact definition according to 2012 resolution by the International Astronomical Union (IAU). Ostensibly equal to the mean distance from the center of the earth to the center of the sun.</definition>
+        </unit>
+        <unit>
+            <comment>Pre-2012 resolution by the IAU</comment>
+            <def>1.495979e11 m</def>
+            <aliases>
+                <name><singular>astronomical_unit_BIPM_2006</singular></name>
+                <symbol>ua</symbol> 
+            </aliases>
+            <definition>unit of measurement equal to 149.6 million kilometers, the mean distance from the center of the earth to the center of the sun according to the International Bureau of Weights and Measures (BIPM) in 2006</definition>
+        </unit>
+
+    <!-- Units temporarily accepted for use with the SI.  NB: <name>
+         and <symbol> elements appear only within <aliases>. -->
+        <unit>
+            <comment>Unit is temporarily accepted for use with the SI.</comment>
+            <def>1852 m</def>
+            <aliases>
+                <name><singular>nautical_mile</singular></name>
+            </aliases>
+            <definition>unit of distance at sea, set at 1852 meters (approximately one minute of arc measured along any meridian)</definition>
+        </unit>
+        <unit>
+            <comment>Unit is temporarily accepted for use with the SI.</comment>
+            <def>nautical_mile/hour</def>
+            <aliases>
+                <name><singular>international_knot</singular></name>
+                <name><singular>knot_international</singular></name>
+                <name><singular>knot</singular></name>
+            </aliases>
+            <definition>derived unit of speed at sea</definition>
+        </unit>
+        <unit>
+            <comment>Unit is temporarily accepted for use with the SI.</comment>
+            <def>1e-10 m</def>
+            <aliases>
+                <name><singular>angstrom</singular></name>
+                <name><singular>&#xE5;ngstr&#xF6;m</singular></name>
+                <symbol comment="LATIN CAPITAL LETTER A WITH RING ABOVE">&#xC5;</symbol>
+                <symbol comment="ANGSTROM SIGN">&#x212B;</symbol>       
+            </aliases>
+            <definition>unit of length equal to one hundred-millionth of a centimeter (1 meter/10**10)</definition>
+        </unit>
+        <unit>
+           <comment>Unit is temporarily accepted for use with the SI.</comment>
+           <def>dam^2</def>
+            <aliases>
+                <name><singular>are</singular></name>
+                <symbol>a</symbol>
+            </aliases>
+            <definition>unit of area equal to 100 square meters</definition>
+        </unit>
+        <unit>
+            <comment>Unit is temporarily accepted for use with the SI.</comment>
+            <def>100 are</def>
+            <aliases> <name><singular>hectare</singular></name> </aliases>
+            <definition>unit of area equal to 100 are ('hectoare'), or 10000 square meters</definition>
+        </unit>
+        <unit>
+            <comment>Unit is temporarily accepted for use with the SI.</comment>
+            <def comment="exact">100 fm^2</def>
+            <aliases>
+                <name><singular>barn</singular></name>
+                <symbol>b</symbol>
+            </aliases>
+            <definition>unit of area, approximately the cross-sectional area of a uranium nucleus (10e-28 square meters)</definition>
+        </unit>
+        <unit>
+            <comment>Unit is temporarily accepted for use with the SI.</comment>
+            <def>1000 hPa</def>
+            <aliases>
+                <name><singular>bar</singular></name>
+            </aliases>
+            <definition>unit of pressure equal to 100000 Pascals, or about 0.987 atmospheres of pressure</definition>
+        </unit>
+        <unit>
+            <comment>Unit is temporarily accepted for use with the SI.</comment>
+            <def>cm/s^2</def>
+            <aliases>
+                <name><singular>gal</singular></name>
+            </aliases>
+            <definition>unit of acceleration equal to 1 cm per second squared</definition>
+        </unit>
+        <unit>
+            <comment>Unit is temporarily accepted for use with the SI.</comment>
+            <def>3.7e10 Bq</def>
+            <aliases>
+                <name><singular>curie</singular></name>
+                <symbol>Ci</symbol>
+            </aliases>
+            <definition>unit of radioactivity corresponding to 3.7 * 10e10 disintegrations per second</definition>
+        </unit>
+        <unit>
+            <comment>Unit is temporarily accepted for use with the SI.</comment>
+            <def>2.58e-4 C/kg</def>
+            <aliases>
+                <name><singular>roentgen</singular></name>
+                <symbol>R</symbol>
+            </aliases>
+            <definition>unit of ionizing radiation, the amount producing one electrostatic unit of positive or negative ionic charge in one cubic centimeter of air under standard conditions; rarely used</definition>
+        </unit>
+        <!-- The following is commented-out because "rad" has already
+             been mapped to "radian"
+        <unit>
+            <comment>Unit is temporarily accepted for use with the SI.</comment>
+            <def>cGy</def>
+            <aliases> <name><singular>rad</singular></name> </aliases>
+            <definition>derived unit of ionizing radiation (absorbed) dose, defined as the absorption of 1 joule of radiation energy by one kilogram of matter (one hundredth of a gray)</definition>
+        </unit>
+        -->
+        <unit>
+            <comment>Unit is temporarily accepted for use with the SI.</comment>
+            <def>cSv</def>
+            <aliases>
+                <name><singular>rem</singular></name>
+            </aliases>
+            <definition>unit of radiation dosage applied to humans; equal to one hundredth of a sievert</definition>
+        </unit>
+</unit-system>

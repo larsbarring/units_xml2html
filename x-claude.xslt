@@ -99,33 +99,33 @@
             </head>
             <body>
                 <xsl:choose>
-                <xsl:when test="//base">
-                    <div class="header">
-                        <h1>SI Base Units</h1>
-                        <p>The seven fundamental units of the International System of Units (SI)</p>
-                    </div>
-                    <xsl:apply-templates select="//unit[base]"/>
-                </xsl:when>
-                <xsl:when test="//unit[comment[text() = 'SI derived unit']]">   
-                    <div class="header">
-                        <h1>SI Derived Units Reference</h1>
-                        <p>SI derived unit</p>
-                    </div>
-                    <xsl:apply-templates select="//unit[comment[text() = 'SI derived unit']]"/>
-                </xsl:when>
-                <xsl:when test="//unit/comment/text()[starts-with('SI derived unit with special')]">   
-                    <div class="header">
-                        <h1>SI Derived Units Reference</h1>
-                        <p>SI derived unit with special names/symbols admitted for reasons of safeguarding human health</p>
-                    </div>
-                    <xsl:apply-templates select="//unit[comment/text()[starts-with(. = 'SI derived unit with special')]]"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <div class="header">
-                        <h1>Units accepted for use with SI</h1>
-                    </div>
-                    <xsl:apply-templates select="//unit"/>
-                </xsl:otherwise>
+                    <xsl:when test="//base">
+                        <div class="header">
+                            <h1>SI Base Units</h1>
+                            <p>The seven fundamental units of the International System of Units (SI)</p>
+                        </div>
+                        <xsl:apply-templates select="//unit[base]"/>
+                    </xsl:when>
+                    <xsl:when test="//unit/comment[. = 'SI derived unit']">
+                        <div class="header">
+                            <h1>SI Derived Units Reference</h1>
+                            <p>SI derived unit</p>
+                        </div>
+                        <xsl:apply-templates select="//unit[comment = 'SI derived unit']"/>
+                    </xsl:when>
+                    <xsl:when test="//unit/comment[starts-with(., 'SI derived unit with special')]">
+                        <div class="header">
+                            <h1>SI Derived Units Reference</h1>
+                            <p>SI derived unit with special names/symbols admitted for reasons of safeguarding human health</p>
+                        </div>
+                        <xsl:apply-templates select="//unit[comment[starts-with(., 'SI derived unit with special')]]"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <div class="header">
+                            <h1>Units accepted for use with SI</h1>
+                        </div>
+                        <xsl:apply-templates select="//unit"/>
+                    </xsl:otherwise>
                 </xsl:choose>
 
                 <div class="copyright">
