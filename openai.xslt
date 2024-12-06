@@ -125,7 +125,15 @@
             </xsl:if>
 
             <!-- Process Other Units -->
-            <xsl:if test="//unit">             <!-- [not(base) and not(comment)]">  -->
+            <xsl:if test="//unit[not(base) and not(comment[text()[starts-with(., 'SI derived unit')]])]">
+                <div class="header">
+                    <h1>Units Accepted for Use with SI</h1>
+                </div>
+                <xsl:apply-templates select="//unit[not(base) and not(comment[text()[starts-with(., 'SI derived unit')]])]"/>
+            </xsl:if>
+
+            <!--
+            <xsl:if test="//unit[not(base) and not(comment[text()[starts-with(., 'SI derived unit')]])]">
                 <div class="header">
                     <h1>Units Accepted for Use with SI</h1>
                 </div>
@@ -137,6 +145,7 @@
                     The UDUNITS-2 package is copyrighted by the University Corporation for Atmospheric Research, 2020.
                 </p>
             </div>
+            -->
         </body>
         </html>
     </xsl:template>
